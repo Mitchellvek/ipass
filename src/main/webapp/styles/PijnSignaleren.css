@@ -1,0 +1,99 @@
+body {
+	display: block;
+  	width: 100%;
+  	height: 100%;
+  	background-color: rgba(00,00,00, 0.75);
+}
+
+#block {
+	background-color: rgba(156, 203, 70, 0.89);
+	width: 90%;
+  	height: fit-content;
+  	display: block;
+  	position: fixed;
+  	border-radius: 4rem;
+  	top: 13%;
+  	left: 5%;
+  	padding: 0%;
+}
+
+
+#mainnav {
+	background-color: #868484 !important;
+}
+
+#uitloggen	{
+	position: absolute;
+	left: 90%;
+}
+
+#subnav {
+	display: block;
+	top: 5.3%;
+	width: fit-content;
+	border-radius: 0px 0px 14px 0px;
+	height: fit-content;
+	padding-top: 0.1%
+}
+
+#subnav>div>ul>li>a {
+	color: black;
+}
+
+.navbar-header {
+	padding-top: 0.20%;
+	padding-left: 0.33%;
+}
+
+.nav>li>a {
+	color: rgba(156, 203, 70, 0.89);
+}
+
+.active>a {
+	background-color: rgba(156, 203, 70, 0.89) !important;
+	color: white !important;
+}
+
+#block>h1 {
+	text-align: center;
+	font-family: arial;
+	font-weight: 700;
+	padding-bottom: 3%;
+	padding-top: 1%;
+}
+
+.form-group {
+	display: block;
+	position: relative;
+	padding-bottom: 2%;
+	border-radius: 1%;
+	border-bottom: solid #7D7D7D;
+	width: 90%;
+	left: 5%;
+}
+
+.form-group>div>textarea {
+	width: 80%;
+}
+
+.form-group>label {
+	color: white;
+	font-size: large;
+	font-family: arial;
+}
+
+#slider {
+	width: 66%;
+}
+
+
+#copyright {
+	position: relative;
+	display: inline-block;
+	height: 4%;
+	width: fit-content;
+	color: white;
+
+	left: 6.7%;
+	margin-top: 1%;
+}

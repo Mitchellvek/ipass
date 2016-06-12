@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8" />
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    	<title>vraag stellen SteniaFysio</title>
+
+		<!--			imports				-->
+		<link rel="stylesheet" type="text/css" href="../../bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../styles/vraagstellen.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" id="mainnav">
+			<div class="navbar-header">
+  				<ul class="nav nav-pills">
+				  <li role="presentation" ><a href="../../Home.jsp"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+				  <li role="presentation" id="uitloggen">
+				  	<form class="form-horizontal" action="LogoutServlet.do" method="get" >
+				  		<button type="submit" class="btn btn-success">Uitloggen</button>
+				  	</form>
+				  </li>
+				</ul>
+			</div>
+		</nav>
+		<nav class="navbar navbar-default navbar-fixed-top" id="subnav">
+			<div class="navbar-header">
+  				<ul class="nav nav-pills">
+				  <li role="presentation"><a href="Pijnmetingen.jsp">Pijn Signaleren</a></li>
+				  <li role="presentation" class="active"><a href="vraagstellen.html">Vraag Stellen</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="block">
+			<div class="vraagblock">
+				<h1>Een vraag stellen aan SteniaFysio</h1>
+				<form action="VraagStellenServlet.do" method="post" id="vraagstelling">
+					<div class="form-group" id="vraag">
+						<label for="vraagstelling">Geef hieronder uw vraag:</label><br>
+						<textarea name="vraag" form="vraagstelling" placeholder="Enter uw vraag hier..."></textarea> 
+					</div>
+						<button type="submit" class="btn btn-primary" required>Versturen</button>
+				</form>
+			</div>
+		</div>
+		<div id="copyright"><p>Copyright ©2016 - Stenia Fysio</p></div>
+	</body>
+</html>

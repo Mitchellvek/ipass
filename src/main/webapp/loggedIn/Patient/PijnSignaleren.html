@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8" />
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    	<title>pijn signaleren SteniaFysio</title>
+
+		<!--			imports				-->
+		<link rel="stylesheet" type="text/css" href="../../bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../styles/PijnSignaleren.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" id="mainnav">
+			<div class="navbar-header">
+  				<ul class="nav nav-pills">
+				  <li role="presentation" ><a href="../../Home.jsp"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+				  <li role="presentation" id="uitloggen">
+				  	<form class="form-horizontal" action="LogoutServlet.do" method="get" >
+				  		<button type="submit" class="btn btn-success">Uitloggen</button>
+				  	</form>
+				  </li>
+				</ul>
+			</div>
+		</nav>
+		<nav class="navbar navbar-default navbar-fixed-top" id="subnav">
+			<div class="navbar-header">
+  				<ul class="nav nav-pills">
+				  <li role="presentation" class="active"><a href="Pijnmetingen.jsp">Pijn Signaleren</a></li>
+				  <li role="presentation"><a href="vraagstellen.html">Vraag Stellen</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="block">
+			<h1>Pijn Signaleren</h1>
+			<form class="form-horizontal" action="PijnSignalerenServlet.do" method="post" id="Pijnsignalering">
+				<div class="form-group" id="pijnhoeveelheid">
+					<label for="hoeveelheid" class="col-sm-2 control-label">hoeveelheid pijn:</label>
+					<div>
+						<input type="range" min="0" max="100" value="0" form="Pijnsignalering" id="slider" onchange="showValue(this.value)"  name="hoeveelheid"/>
+						<span id="range">0</span>
+						<script type="text/javascript">
+						function showValue(newValue)
+						{
+							document.getElementById("range").innerHTML=newValue;
+						}
+						</script>
+					</div>
+				</div>
+				  <div class="form-group" id="pijnlocatie">
+				   	<label for="locatie" class="col-sm-2 control-label">Locatie van de pijn:</label>
+				    <div class="col-sm-10">
+				      <textarea name="locatie" form="Pijnsignalering" placeholder="Locatie van uw pijn..." class="form-control"></textarea> 
+				    </div>
+				  </div>
+				  <div class="form-group" id="opmerking">
+				    <label for="opmerking" class="col-sm-2 control-label">Opmerking:</label>
+				    <div class="col-sm-10">
+				      <textarea name="Opmerking" form="Pijnsignalering" placeholder="Uw opmerking..." class="form-control"></textarea> 
+				    </div>
+				  </div>
+				  <div class="form-group" id="save">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <button type="submit" class="btn btn-primary">Save</button>
+				    </div>
+				  </div>
+			</form>
+		</div>
+		<div id="copyright"><p>Copyright ©2016 - Stenia Fysio</p></div>
+	</body>
+</html>

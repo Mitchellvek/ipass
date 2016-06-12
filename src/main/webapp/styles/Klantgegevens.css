@@ -1,0 +1,129 @@
+body {
+	display: block;
+  	width: 100%;
+  	height: 100%;
+  	background-color: rgba(00,00,00, 0.75);
+}
+
+#block {
+	background-color: rgba(156, 203, 70, 0.89);
+	width: 90%;
+  	height: 80%;
+  	max-height: 200%;
+  	display: block;
+  	position: relative;
+  	border-radius: 4rem;
+  	top: 2%;
+  	left: 5%;
+  	padding: 0%;
+}
+
+
+#mainnav {
+	background-color: #868484 !important;
+	position: relative;
+	width: auto !important;
+}
+
+#uitloggen	{
+	position: absolute;
+	left: 90%;
+}
+
+#subnav {
+	display: block;
+	position: relative;
+	width: fit-content;
+	border-radius: 0px 0px 15px 0px;
+	height: fit-content;
+}
+
+#subnav>div>ul>li>a {
+	color: black;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar-header {
+	padding-top: 0.20%;
+	padding-left: 0.33%;
+}
+
+.nav>li>a {
+	color: rgba(156, 203, 70, 0.89);
+}
+
+.active>a {
+	background-color: rgba(156, 203, 70, 0.89) !important;
+	color: white !important;
+}
+
+#block>h1 {
+	left: 4%;
+	width: 90%;
+	font-family: arial;
+	position: relative;
+	font-weight: 700;
+	padding-bottom: 3%;
+	padding-top: 1%;
+}
+
+#block>a {
+	position: absolute;
+	top: 5%;
+	left: 70%;
+	width: 20%;
+	height: fit-content;
+	font-size: 180%;
+}
+
+.backbutton {
+	left: 50% !important;
+	width: fit-content;
+}
+
+table {
+    border-collapse: collapse;
+    position: relative;
+    left: 2%;
+    max-width: 90% !important;
+    width: fit-content !important;
+    margin-bottom: 3px !important;
+}
+
+table, th, td {
+    border: 1px solid black;
+    background-color: white;
+}
+
+td {
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+	text-align: center;
+}
+
+thead>tr, thead>tr>td {
+	background-color: grey;
+	color: white;
+}
+
+#chartdiv {
+	display: block !important;
+	position: absolute !important;
+	left: 60%;
+	top: 30%;	
+	background-color: white;
+}
+
+#copyright {
+	position: relative;
+	display: inline-block;
+	height: 4%;
+	width: fit-content;
+	color: white;
+
+	left: 6.7%;
+	margin-top: 1%;
+}

@@ -1,0 +1,102 @@
+body {
+	display: block;
+  	width: 100%;
+  	height: 100%;
+  	background-color: rgba(00,00,00, 0.75);
+}
+
+#block {
+	background-color: rgba(156, 203, 70, 0.89);
+	width: 90%;
+  	height: 82%;
+  	display: block;
+  	position: fixed;
+  	border-radius: 4rem;
+  	top: 13%;
+  	left: 5%;
+  	padding: 0%;
+}
+
+
+#mainnav {
+	background-color: #868484 !important;
+}
+
+#uitloggen	{
+	position: absolute;
+	left: 90%;
+}
+
+#subnav {
+	display: block;
+	top: 5.3%;
+	width: fit-content;
+	border-radius: 0px 0px 14px 0px;
+	height: fit-content;
+	padding-top: 0.1%
+}
+
+#subnav>div>ul>li>a {
+	color: black;
+}
+
+.navbar-header {
+	padding-top: 0.20%;
+	padding-left: 0.33%;
+}
+
+.nav>li>a {
+	color: rgba(156, 203, 70, 0.89);
+}
+
+.active>a {
+	background-color: rgba(156, 203, 70, 0.89) !important;
+	color: white !important;
+}
+
+
+.vraagblock {
+	font-family: arial;
+}
+
+.vraagblock>h1 {
+	font-weight: 700;
+	text-align: center;
+}
+
+#vraagstelling>button {
+	position: absolute;
+	top: 87%;
+	left: 92.2%;
+}
+
+#vraag {
+	font-size: large;
+	padding-top: 2%;
+	position: absolute;
+	width: 95%;
+	left: 3%;
+}
+
+#vraag>textarea {
+	height: 50rem;
+	width: 99%;
+	padding: 1px;
+	color: black;
+	line-height: 2rem;
+}
+
+.btn-primary {
+	position: absolute !important;
+	left: 87% !important;
+}
+
+
+#copyright {
+	position: fixed;
+	height: 4%;
+	width: auto;
+	top: 96%;
+	color: white;
+	left: 6.7%;
+}
